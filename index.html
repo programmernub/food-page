@@ -9,60 +9,198 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
-	
-	<header class="header" id="header">
-		<div class="logo">
-			<img class="logo-image" src="images/mainPage/logo.webp">
-		</div>
-
-		<div class="menu_bar">
-			<a href="#" class="bt-menu" id="bt-menu"><i class="icon fas fa-bars"></i></a>
-		</div>
- 
-		<nav class="menu-options hidden" id="menu-options">
-			<ul>
-				<li><a href="#" class="option"><i class="icon fas fa-home"></i>Inicio</a></li>
-				<li><a href="#" class="option"><i class="icon fas fa-bullhorn"></i>Promociones</a></li>
-				<li><a href="#" class="option"><i class="icon fas fa-utensils"></i>Menú</a></li>
-				<li><a href="#" class="option"><i class="icon fas fa-phone"></i>Contactanos</a></li>
-				<li><a href="#" class="option"><i class="fas fa-shopping-cart"></i></i>Carrito</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="menu-options hidden" id="menu-options">
+		<ul>
+			<li><a href="#introduce" class="option"><i class="icon fas fa-home"></i>Inicio</a></li>
+			<li><a href="#proms" class="option"><i class="icon fas fa-bullhorn"></i>Promociones</a></li>
+			<li><a href="#food-menu" class="option"><i class="icon fas fa-utensils"></i>Menú</a></li>
+			<li><a href="#footer" class="option"><i class="icon fas fa-phone"></i>Contactanos</a></li>
+			<li><a href="#" class="option"><i class="fas fa-shopping-cart"></i></i>Carrito</a></li>
+		</ul>
+	</div>
 
 
 
 
 
-	<main>
-		<section>
-			<div id="introduce" class="introduce">
-				<h2 class="enjoy">Disfruta <br> <span class="friends">con amigos</span></h2>
-				<p class="introduce-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div id="container" class="container">
+		<header class="header" id="header">
+			<div class="logo">
+				<img class="logo-image" src="images/mainPage/logo.webp">
 			</div>
-		</section>
-		<section class="proms" id="proms">
-			<h2>Ofertas</h2>
-			<img src="images/mainPage/combo1.jpg" alt="promocion" id="proms-image" class="proms-image">
-		</section>
-		<section class="food-menu" id="food-menu">
-			<h2>Menú</h2>
-			<div>
-				<img src="images/mainPage/pizzas.webp">
-				<h3>Pizzas</h3>
-			</div>
-			<img src="images/mainPage/beverages.webp">
-			<img src="images/mainPage/postre.jpg">
-		</section>
-	</main>
 
-	<footer>
-	</footer>
+			<div class="menu_bar">
+				<a href="#" class="bt-menu" id="bt-menu"><i class="icon fas fa-bars"></i></a>
+			</div>
+	 
+			
+		</header>
+
+
+
+
+
+		<main>
+			<section>
+				<div id="introduce" class="introduce">
+					<h2 class="enjoy">Disfruta <br> <span class="friends">con amigos</span></h2>
+					<p class="introduce-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</section>
+			<section class="proms" id="proms">
+				<h2>Ofertas</h2>
+				<img src="images/mainPage/combo1.jpg" alt="promocion" id="proms-image" class="proms-image">
+			</section>
+
+
+			<section class="food-menu" id="food-menu">
+				<h2>Menú</h2>
+				<div class="options-container" id="pizzas">
+					<div class="image-container">
+						<img src="images/mainPage/pizzas.webp">
+					</div>
+					<div class="food-description">
+						<h3>Pizzas</h3>
+						<p>Encuentra la mejor pizza para ti</p>
+					</div>
+				</div>
+
+
+
+
+
+
+
+				<div class="section-pizzas hidden" id="section-pizzas">
+					<div class="pizzas-option" id="pizza-cuatro">
+						<img src="images/modalPizza/cuatroEstaciones.webp">
+						<p><strong>Pizza 4 estaciones</strong> <br>$14.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+					<div class="pizzas-option" id="pizzas-peperoni">
+						<img src="images/modalPizza/peperoni.webp">
+						<p><strong>Pizza de peperoni</strong> <br>$9.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="options-container" id="beverages">
+					<div class="image-container">
+						<img src="images/mainPage/beverages.webp">
+					</div>
+					<div class="food-description">
+						<h3>Bebidas</h3>
+						<p>Explora nuestra variedad de bebidas</p>
+					</div>
+				</div>
+
+				<div class="section-beverages hidden" id="section-beverages">
+					<div class="beverages-option" id="horchata">
+						<img src="images/modalBebidas/horchata.webp">
+						<p><strong>Horchata</strong> <br>$1.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+					<div class="beverages-option" id="te">
+						<img src="images/modalBebidas/teLimon.webp">
+						<p><strong>Té de limón</strong> <br>$2.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+					<div class="beverages-option" id="soda">
+						<img src="images/modalBebidas/soda1.5.webp">
+						<p><strong>Soda 1.5</strong> <br>$1.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+					<div class="beverages-option" id="soda-lata">
+						<img src="images/modalBebidas/sodaLata.webp">
+						<p><strong>Soda en lata</strong> <br>$1.50</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+				<div class="options-container" id="postres">
+					<div class="image-container">
+						<img src="images/mainPage/postre.jpg">
+					</div>
+					<div class="food-description">
+						<h3>Postres</h3>
+						<p>¿Algo dulce para terminar?</p>
+					</div>
+				</div>
+
+				<div class="section-postres hidden" id="section-postres">
+					<div class="postre-option" id="quesadilla">
+						<img src="images/modalPostre/quesadillaFamiliar.webp">
+						<p><strong>Quesadilla familiar</strong> <br>$14.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+					<div class="postre-option" id="rollos">
+						<img src="images/modalPostre/rollosCanela.webp">
+						<p><strong>Rollos de canela</strong> <br>$4.99</p>
+						<button id="añadir" class="añadir">Añadir al carrito</button>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</section>
+		</main>
+
+		<footer class="footer" id="footer">
+			<h2 class="tittle">Si deseas ordenar a travéz de nuestro call center llama al (503) 2257-7777</h2>
+			<article>
+				© 2019 Pizza Hut International, LLC. Todos los derechos reservados. El nombre Pizza Hut, logos, imágenes y marcas relacionadas son marcas registradas of Pizza Hut, Inc. para Estados Unidos y Alimentos y Turismo S.A. de C.V. para El Salvador.
+				PEPSI, PEPSI-COLA y el Logo de Pepsi, son marcas registradas de PepsiCo, Inc. Twitter es una marca registrada de Twitter, Inc. Facebook e Instagram son marcas registrada de Facebook, Inc. Youtube es una marca registrada de YouTube, LLC
+
+				Disponibilidad de masas, áreas de cobertura, horarios, garantía de 30 minutos pueden variar por área. Muchas promociones descritas y ofrecidas en este Sitio Web son exclusivamente para la compra en línea.
+
+				Para pedidos pagados con tarjeta de crédito, el dueño de la tarjeta deberá estar presente al momento de recibir el pedido para firmar el mismo y presentar su tarjeta de crédito y DUI.
+
+				Pizza Hut jamás enviará correos pidiendo tarjetas de crédito y claves.
+			</article>
+
+			<div class="networks" id="networks">
+				<h2>Siguenos en nuestras redes sociales</h2>
+				<div class="icons" id="icons">
+					<a href="#"><i class="icons-network fab fa-facebook-square"></i></a>
+					<a href="#"><i class="icons-network fab fa-instagram"></i></a>
+					<a href="#"><i class="icons-network fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</footer>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
